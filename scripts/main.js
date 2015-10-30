@@ -1,0 +1,1 @@
+"use strict";$(function(){var t="All work and no play makes Jack a dull boy",n=$("#typewriter"),e=null,i=0,l=0,a=6,o=function(){n.append($("<pre>")),i=0,e=$(n.find("pre")[l]),l++,$.each(t.split(""),function(n,u){setTimeout(function(){e.text(e.text()+u),i++,t.length===i&&a>l&&o()},100*n)})};o(!1)});
